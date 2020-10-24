@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+</head>
+
+<body id="mybody">
+    <div class="loading-screen"></div>
+
+    <div class="loader">
+        <div class="ringOne ring">
+            <img src="./assets/ring.png" alt="">
+        </div>
+        <div class="ringTwo ring">
+            <img src="./assets/ring.png" alt="">
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <h4>For Logo</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#home"><span  onclick="closenav()">Home</span></a>
+            </li>
+            <li>
+                <a href="#about" onclick="closenav()">About</a>
+            </li>
+            <li>
+                <a href="#worked" onclick="closenav()">Worked</a>
+            </li>
+            <li>
+                <a href="#contact" onclick="closenav()">Contact</a>
+            </li>
+            <div class="cursor3"></div>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hi, I am</h1>
+            <h1><span class="name">Gowtham </span> Eswaran</h1>
+            <h1 class="type"></h1>
+            <a href="./resume.pdf" download="gowtham">Resume</a>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <h2>About Me </h2>
+        <div class="about-container">
+            <div class="about-content">
+                <h3>Hello! I am Gowtham, a software engineer</h3><br>
+                <h3>I create things that live on the internet. My goal is build things for the business as far as yours requirement </h3>
+                <br>
+                <h3>I finished my bachelor degree in UIT </h3>
+                <br>
+                <h3>Last place i worked in MGS at coimbatore </h3>
+                <br>
+                <h3>Some of the web technologies i worked and known</h3>
+                <br>
+                <div class="list">
+                    <div>
+                        <div class="list-arrow">
+                            <span>&#8594</span> &nbsp &nbsp &nbsp
+                            <p>html & css</p>
+                        </div>
+                        <div class="list-arrow">
+                            <span>&#8594</span>&nbsp &nbsp &nbsp
+                            <p>angular</p>
+                        </div>
+                        <div class="list-arrow">
+                            <span>&#8594</span>&nbsp &nbsp &nbsp
+                            <p>react</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="list-arrow">
+                            <span>&#8594</span>&nbsp &nbsp &nbsp
+                            <p>nodejs</p>
+                        </div>
+                        <div class="list-arrow">
+                            <span>&#8594</span>&nbsp &nbsp &nbsp
+                            <p>mongodb</p>
+                        </div>
+                        <div class="list-arrow">
+                            <span>&#8594</span>&nbsp &nbsp &nbsp
+                            <p>mysql</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h3>Some of the web hosting technologies i worked and known</h3>
+                <br>
+                <div class="list">
+                    <div>
+                        <div class="list-arrow">
+                            <span>&#8594</span> &nbsp &nbsp &nbsp
+                            <p>google app engine</p>
+                        </div>
+                        <div class="list-arrow">
+                            <span>&#8594</span>&nbsp &nbsp &nbsp
+                            <p>google cloud function</p>
+                        </div>
+                        <div class="list-arrow">
+                            <span>&#8594</span>&nbsp &nbsp &nbsp
+                            <p>amazon ec2 engine</p>
+                        </div>
+                        <div class="list-arrow">
+                            <span>&#8594</span>&nbsp &nbsp &nbsp
+                            <p>mgnix server</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="imageContainer">
+                <img src="./assets/gowtham2 (2).jpg" alt="">
+                <div class="layer">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="worked" class="worked">
+        <h2>Previously Worked </h2>
+        <div class="tabPosition">
+            <div class="tabIndicator"></div>
+            <div class="tab">
+                <button class="demo" onclick="infofunc(event, '2020')" id="current">2020</button>
+                <button class="demo" onclick="infofunc(event, '2019')">2019</button>
+                <button class="demo" onclick="infofunc(event, '2018')">2018</button>
+            </div>
+            <div id="2020" class="demo2">
+                <h3>Stack Developer @ MGS</h3>
+                <h4>Jan 2020 - Sep 2020</h4>
+                <br>
+                <ul>
+                    <li>I worked as full stack developer in mgs</li>
+                    <li>Wrote modern, maintanable, and reusable code for their projects</li>
+                    <li>Work with varies technologies like React, Graphql and Mssql</li>
+                    <li>And also hosting and maintaine the app in google app engine</li>
+                </ul>
+            </div>
+            <div id="2019" class="demo2">
+                <h3>Stack Developer @ droid technologies</h3>
+                <h4>Jan 2019 - dec 2019</h4>
+                <br>
+                <ul>
+                    <li>I worked as full stack developer in droid technologies</li>
+                    <li>Wrote performable, maintanable, and reusable code for the projects</li>
+                    <li>Technologies Which used to write code Angular, nodejs, express js and mongodb</li>
+                    <li>And also hosting and maintaine the app Amazon Ec2 engine and Ngnix</li>
+                </ul>
+            </div>
+            <div id="2018" class="demo2">
+                <h3>Software Trainee @ droid technologies</h3>
+                <h4>Jan 2018 - dec 2018</h4>
+                <br>
+                <ul>
+                    <li>I joined as trainee in droid technologies</li>
+                    <li>I trained as front developer using technologies like Html, css and javascript from jan 2018 to june 2018 </li>
+                    <li>And trained as backend developer using technologies like nodejs, mongodb and express js</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <br>
+        <h3 class="h3contact">I am looking for the new opportunities</h3>
+        <br>
+        <h3 class="h3contact2">Whether you have a question or just want to say hi, pin or call me through the things given below </h3>
+        <br>
+        <div class="social-menu">
+            <ul>
+                <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/gowtham__eswar/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="./anime.js"></script>
+    <script src="./text.js"></script>
+
+    <script type="text/javascript" src="./tab.js"></script>
+
+</body>
+
+</html>

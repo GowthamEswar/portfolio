@@ -66,7 +66,7 @@ function scrollAppear() {
 
     function mediaquery(x) {
         if (x.matches) { // If media query matches
-            imgposfix = imageposition - 200;
+            imgposfix = imageposition + 100;
             aboutposfix = aboutposition - 400;
             tabposfix = tabposition - 200;
             contactposfix = contactposition + 200;
